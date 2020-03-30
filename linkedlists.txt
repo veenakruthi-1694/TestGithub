@@ -1,0 +1,33 @@
+code to create a linkedlist
+
+-define the structure 
+-two things data and node(* next)
+-*next (which holds the address of the next node in the linked list)
+
+#include<stdio.h>
+struct node
+{
+int data;
+struct node *next;
+};
+ 
+ -Program to create a simple linked list with 3 nodes
+  #include<stdio.h>
+  #include<malloc.h>
+int main()
+{
+    struct Node* head = NULL;
+    struct Node* second = NULL;
+    struct Node* third = NULL;
+    head = (struct Node*)malloc(sizeof(struct Node));
+    second = (struct Node*)malloc(sizeof(struct Node));
+    third = (struct Node*)malloc(sizeof(struct Node));
+    head->data = 1;     
+    head->next = second;
+    second->data = 2;
+    second->next =
+    third->data = 3; 
+    third->next = NULL;
+    return 0;
+}
+ 
