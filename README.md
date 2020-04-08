@@ -1,35 +1,44 @@
-TestGithub
+# TestGithub
+=============
 
+ You need to have [Turboc++] (https://www.javatpoint.com/cpp-installation) downloaded and installed.    
+ Turboc++ is used to compile and run the a C program.
 
-How do we compile and run a c program??
+ How to compile and run a C program on Ubuntu Linux using the gcc compiler.
 
-Step 1: Head over to Code::Blocks download page and look out for executable Codeblocks mingw setup. MinGW is a GCC compiler which is bundled with Code::Blocks. Also, it is the easiest way to get GCC on Windows and will save you from all the hardship required to compile C program.
+Step 1. Open up a terminal
+Search for the terminal application in the Dash tool (located as the topmost item in the
+Launcher). Open up a terminal by clicking on the icon.
 
+For ease of future access to the terminal application, right click its icon in the Launcher and
+select “Lock to Launcher”.
 
-Step 2: Once the download has finished, run the executable file and install it on your PC. Also note the directory where you have installed Code::Blocks. By default, it’ll get installed in Program Files(x86).
+Step 2. Use a text editor to create the C source code.
+Type the command
+gedit hello.c
+and enter the C source code below:
+#include <stdio.h>
+main() 
+{
+ printf("Hello World\n");
+}
+Close the editor window.
 
+Step 3. Compile the program.
+Type the command
+gcc -o hello hello.c
+This command will invoke the GNU C compiler to compile the file hello.c and output (-o)
+the result to an executable called hello.
 
-Installation task is done.
-let’s see how to setup GCC Compiler in Windows.
+Step 4. Execute the program.
+Type the command
+./hello
+This should result in the output
+Hello World
 
-Step 1: Head over to This PC (My Computer) -> Enter your System Drive (For me, it’s C Drive) -> Program Files(x86) -> CodeBlocks -> MinGW -> bin -> Copy the drive address.
+Optional step
+In order to avoid the./ prefix each time a program is to be executed, insert the following as
+the last line in the file .profile (located in your home folder):
+export PATH=.:$PATH
+This step needs only to be done once.
 
-
-Step 2: Now, we’ll set the path of GCC. Once again, head over to This PC -> Properties -> Advanced System Settings -> Environment Variables -> In System Variables, look out for Path, tap on it and click Edit -> New -> Paste the copied Drive address -> Ok.
-
- The path variable has been set. Let’s see how to Compile and Run C Program in Windows.
- 
- 3. Compile and Run C Program in Windows:
- 
-Step 1: Open Notepad and write a test C program of your choice. Save the program with an extension of .c.
-
-For instance, if you have decided to name your program as Test, save it as Test.c.
-
-
-Step 2: Launch Command Prompt and point it where your program has been saved. Okay, I’ll let you know how to do this.
-
-Step 3: Once you are done with Step 2, type gcc -o test test.c on Command Prompt Windows and hit Enter. In general, it’s like gcc -o NameOfYourProgram NameOfYourProgram.c
-
-This is how we gonna Compile C program in Windows 10. If there are any errors, it’ll show up there on Command Prompt window.
-
-Step 4: Now, head over to the folder where all your Programs lie. You’ll see the executable of your new compiled program. Double click on it and this how you gonna Run C Program in Windows.
