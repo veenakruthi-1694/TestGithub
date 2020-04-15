@@ -1,10 +1,9 @@
 # TestGithub
 =============
- You need to have [Linux](https://www.wikihow.com/Install-Linux) installed.
+
+You need to have [Linux](https://www.wikihow.com/Install-Linux) installed.
  
  Ubuntu(18.04) Linux should be used to compile and Run (execute) C program.
- 
- https://vitux.com/how-to-write-and-run-a-c-program-in-linux/
  
 
 ## Table of contents
@@ -67,4 +66,4 @@ See[vagrant/README.md] (vagrant/README.md).
 ### Operating System ###
 ./Linux
   
-	
+https://vitux.com/how-to-write-and-run-a-c-program-in-linux/	
