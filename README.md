@@ -1,44 +1,70 @@
 # TestGithub
 =============
+ You need to have [Linux](https://www.wikihow.com/Install-Linux) installed.
+ 
+ Ubuntu(18.04) Linux should be used to compile and Run (execute) C program.
+ 
+ https://vitux.com/how-to-write-and-run-a-c-program-in-linux/
+ 
 
- You need to have [Turboc++] (https://www.javatpoint.com/cpp-installation) downloaded and installed.    
- Turboc++ is used to compile and run the a C program.
+## Table of contents
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [Setup](#setup)
+* [Example](#example)
+* [Compile](#compile )
+* [Run](#run)
+* [Operating System](#operating-system)
 
- How to compile and run a C program on Ubuntu Linux using the gcc compiler.
 
-Step 1. Open up a terminal
-Search for the terminal application in the Dash tool (located as the topmost item in the
-Launcher). Open up a terminal by clicking on the icon.
+## General info ##
+This is simple information about compile and Run the C program.
+	
+## Technologies ##
+ created with:
+* Linux
+* Ubuntu version: 18.04LTS
+* Gcc 
 
-For ease of future access to the terminal application, right click its icon in the Launcher and
-select “Lock to Launcher”.
+## setup ##
+### Type command to install gcc compiler ###
+ ./$ sudo adt-get install build-essential
 
-Step 2. Use a text editor to create the C source code.
-Type the command
-gedit hello.c
-and enter the C source code below:
-#include <stdio.h>
-main() 
-{
- printf("Hello World\n");
-}
-Close the editor window.
+### To check gcc version ### 
+ ./ $gcc -version 
+ 
+ ### Document directory ###
+  ./$cd Documents/  
+  ./$sudo mkdir programs/ 
+  ./$cd programs/
+ 
+### Open a file using Editor ###
+  ./$sudo gedit first.c
+  
+## Example ##
+./#include<stdio.h>
+./int main()
+./{
+./printf("\n welcome to homepage!!\n");
+./}
 
-Step 3. Compile the program.
-Type the command
-gcc -o hello hello.c
-This command will invoke the GNU C compiler to compile the file hello.c and output (-o)
-the result to an executable called hello.
+Save and Exit
 
-Step 4. Execute the program.
-Type the command
-./hello
-This should result in the output
-Hello World
+## Compile ##
+./$sudo gcc first.c
 
-Optional step
-In order to avoid the./ prefix each time a program is to be executed, insert the following as
-the last line in the file .profile (located in your home folder):
-export PATH=.:$PATH
-This step needs only to be done once.
+## Run ##
+./$./a.out
 
+### Running system tests ###
+
+See [tests/README.md] (tests/README.md).
+
+### Running in Vagrant ###
+
+See[vagrant/README.md] (vagrant/README.md).
+
+### Operating System ###
+./Linux
+  
+	
