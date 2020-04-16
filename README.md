@@ -1,7 +1,7 @@
 # TestGithub
 =============
 
-You need to have [Linux](C:\Users\Integra\Documents\Linux) installed.
+You need to have [Linux](https://www.wikihow.com/Install-Ubuntu-Linux) installed.
  
  Ubuntu(18.04) Linux should be used to compile and Run (execute) C program.
  
